@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<h3>Min_Max task3</h3>
+<script>
+function Min_Max(){
+  var numOne, numTwo, numThree, numFour, numFive, sum;
+  one = parseInt(document.getElementById("first").value);
+  two = parseInt(document.getElementById("second").value);
+  three = parseInt(document.getElementById("third").value);
+  four = parseInt(document.getElementById("fourth").value);
+  five = parseInt(document.getElementById("fifth").value);
+  let a = Math.max(one, two, three, four, five);
+  let b = Math.min(one, two, three, four, five);
+  const random = [one, two, three, four, five];
+  var index = Math.floor(Math.random() *random.length);
+  c = random[index];
+  document.getElementById("answer").value = a;
+  document.getElementById("minimum").value = b;
+  document.getElementById("maximum").value = c;
+}
+
+ 
+</script>
+</head>
+<body>
+    <p>a. <input id="first"></p>
+    <p>b. <input id="second"></p>
+    <p>c. <input id="third"></p>
+    <p>d. <input id="fourth"></p>
+    <p>e. <input id="fifth"></p>
+    <p>MAX <input id="answer"></p>
+    <p>MIN <input id="minimum"></p>
+    <p>Random <input id="maximum"></p>
+    <button onclick="Min_Max()">Find</button>
+    
+</body>
+</html>
