@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <h1>Task4</h1>
+        </head>
+    <body>
+
+        <p id="demo"></p>
+<script>
+ let text1 = "Lorem Ipsum is simply dummy text of the printing and typesetting industry"
+ let text2 = "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+ let text3 = "It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially "
+ let text4 = "UNCHANGED."
+ let text5 = "It was popularised in the"
+ let text6 = "1960s"
+ let text7 = "with the release of"
+ let text8 = "LETRASET"
+ let text9 = "sheets containing Lorem Ipsum passages, and"
+ let text10 = "more recently with desktop"
+ let text11 = "publishing software like Aldus"
+ let text12 = "Page Maker"
+ let text13 = "including version of"
+ let text14 = "lorem Ipsum."
+ let link = text12.link("https://www.google.com");
+ let link2 = text2.bold();
+ link2 = link2.fontsize(4);
+ let link3 = text4.bold();
+ link3 = link3.big();
+ let link4 = text6.bold();
+ link4 = link4.fontsize(4);
+ let link5 = text8.bold();
+ link5 = link5.big();
+ let link6 = text10.strike();
+ let link7 = text14.big();
+ link7 = link7.italics();
+ document.getElementById("demo").innerHTML = 
+            text1 + " " + link2 + " " + text3 + " " + link3 + " " + text5 
+            + " " + link4 + " " + text7 + " " + link5 + " " + text9 + " " + link6
+            + " " + text11 + " " + link + " " + text13 + " " + link7; 
+</script>
+</body>
+</html>
